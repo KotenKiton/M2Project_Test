@@ -147,4 +147,19 @@ public class FormTest extends TestBase {
 
         });
     }
+
+    @Test
+    @DisplayName("Подача обьявления с адресом из цифр")
+        // отредачить тайтл
+    void adWithNumbers() {
+        step("Нажать кнопку 'новое обьявление'", () ->
+                $(".offerPlacementLinkText").click());
+
+        step("В строке адрес ввести '00000'", () ->
+                $("[data-test=form-input-address-suggest-input] input").setValue("00000"));
+
+        step("Текст ошибки 'Не удалось определить адрес'", () ->
+                $("[data-test=form-input-region]").click());
+        $(".FormError").shouldHave(text("Не удалось определить адрес"));
+    }
 }
