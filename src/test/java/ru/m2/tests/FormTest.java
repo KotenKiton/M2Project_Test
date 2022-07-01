@@ -80,9 +80,9 @@ public class FormTest extends TestBase {
     @Test
     @DisplayName("Cнять комнату в Московской области")
     void rentRoomTest() {
-        step("Перейти во вкладку 'Cнять'", () ->
-                $(".search-section-module--tabItem--3iJUl [data-test=rent-tab]").click()
-        );
+        step("Перейти во вкладку 'Cнять'", () -> {
+            $(".search-section-module--tabItem--3iJUl [data-test=rent-tab]").click();
+        });
 
         step("В селекторе с типом объекта выбрать из выпадающего списка Комната", () -> {
             $$("[data-test=categoryType-button]").last().click();
@@ -118,9 +118,9 @@ public class FormTest extends TestBase {
     @Test
     @DisplayName("Поиск по предустановленному фильтру")
     void saveFilterTest() {
-        step("Выбрать предустановленный фильтр 'Студии'", () ->
-                $(byText("Студии")).click()
-        );
+        step("Выбрать предустановленный фильтр 'Студии'", () -> {
+            $(byText("Студии")).click();
+        });
 
         step("Указан заголовок поиска 'Купить студию в Москве' ", () -> {
             $(".OffersSearch__title")
@@ -131,35 +131,39 @@ public class FormTest extends TestBase {
     @Test
     @DisplayName("Подача заявки на консультацию с неполным номером телефона")
     void failedPhoneTest() {
-        step("Нажать кнопку купить онлайн", () ->
-                $("[data-test=client-path-online-deal]").click());
+        step("Нажать кнопку купить онлайн", () -> {
+            $("[data-test=client-path-online-deal]").click();
+        });
 
-        step("Нажать кнопку 'Получить консультацию'", () ->
-                $(byText("Получить консультацию")).click());
+        step("Нажать кнопку 'Получить консультацию'", () -> {
+            $(byText("Получить консультацию")).click();
+        });
 
         step("Ввести в поле 'Телефон'неполный номер", () -> {
             $$("input.input-module--control--mTJZU").get(1).setValue("123456789");
             $$("input.input-module--control--mTJZU").first().click();
+        });
 
-            step("Текст ошибки 'Введён некоректный номер'", () ->
-                    $("[data-test=error]")
-                            .shouldHave(text("Введён некорректный номер")));
-
+        step("Текст ошибки 'Введён некоректный номер'", () -> {
+            $("[data-test=error]")
+                    .shouldHave(text("Введён некорректный номер"));
         });
     }
 
     @Test
-    @DisplayName("Подача обьявления с адресом из цифр")
-        // отредачить тайтл
+    @DisplayName("Заполнение адреса значением из цифр при подаче обьявления")
     void adWithNumbers() {
-        step("Нажать кнопку 'новое обьявление'", () ->
-                $(".offerPlacementLinkText").click());
+        step("Нажать кнопку 'новое обьявление'", () -> {
+            $(".offerPlacementLinkText").click();
+        });
 
-        step("В строке адрес ввести '00000'", () ->
-                $("[data-test=form-input-address-suggest-input] input").setValue("00000"));
+        step("В строке адрес ввести '00000'", () -> {
+            $("[data-test=form-input-address-suggest-input] input").setValue("00000");
+        });
 
-        step("Текст ошибки 'Не удалось определить адрес'", () ->
-                $("[data-test=form-input-region]").click());
-        $(".FormError").shouldHave(text("Не удалось определить адрес"));
+        step("Текст ошибки 'Не удалось определить адрес'", () -> {
+            $("[data-test=form-input-region]").click();
+            $(".FormError").shouldHave(text("Не удалось определить адрес"));
+        });
     }
 }

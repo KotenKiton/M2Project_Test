@@ -18,16 +18,15 @@ public class TestBase {
     static void setUp() {
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        //CredentialsConfig configLogg = ConfigFactory.create(CredentialsConfig.class);
+        CredentialsConfig configLogg = ConfigFactory.create(CredentialsConfig.class);
 
-        //String login = configLogg.login();
-        //String password = configLogg.password();
+        String login = configLogg.login();
+        String password = configLogg.password();
 
-       // String remoteUrlSelenoid = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
+        String remoteUrlSelenoid = System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
 
         Configuration.browserSize = "1920x1080";
-        Configuration.holdBrowserOpen = true;
-        // Configuration.remote = "https://" + login + ":" + password + "@" + remoteUrlSelenoid;
+        Configuration.remote = "https://" + login + ":" + password + "@" + remoteUrlSelenoid;
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
