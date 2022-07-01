@@ -25,7 +25,7 @@ public class FormTest extends TestBase {
     }
 
     @Test
-    @DisplayName("Купить Дом до 5 мл в Москве")
+    @DisplayName("Купить Дом до 5 млн в Москве")
     void buyHouseTest() {
         step("В селекторе с типом объекта из выпадающего списка выбрать 'Дом'", () -> {
             $("[data-test=categoryType-button]")
