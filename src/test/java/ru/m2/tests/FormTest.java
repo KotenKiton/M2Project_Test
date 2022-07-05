@@ -3,6 +3,7 @@ package ru.m2.tests;
 
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -78,6 +79,7 @@ public class FormTest extends TestBase {
     }
 
     @Test
+    @Disabled("Для примера skipped теста") // Тест проходит зелёным но для примера Skipped теста отключил его
     @DisplayName("Cнять комнату в Московской области")
     void rentRoomTest() {
         step("Перейти во вкладку 'Cнять'", () -> {
@@ -124,7 +126,8 @@ public class FormTest extends TestBase {
 
         step("Указан заголовок поиска 'Купить студию в Москве' ", () -> {
             $(".OffersSearch__title")
-                    .shouldHave((text("Купить студию в Москве")));
+                    .shouldHave((text("В москве купить студию")));
+            //Чтобы тест прошёл зелёным нужно проверить по тексту "Купить студию в Москве".Выключен для приера отчёта.
         });
     }
 
