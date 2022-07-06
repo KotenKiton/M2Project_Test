@@ -5,23 +5,21 @@
 <a id="anchor"></a>
 
 :closed_book: __Содержание__
-+ Технологии и инструменты
-+ Реализованные проверки
-+ Сборка в Jenkins
-+ Запуск из терминала
-+ Отчет Allure Report
-+ Отчет в Telegram
-+ Видео примера прохождения теста
++ [Технологии и инструменты](#instruments)
++ [Пример Smoke тестов](#smoke)
++ [Сборка в Jenkins](#jenkins)
++ [Запуск из терминала](#terminal)
++ [Allure отчётность](#report)
++ [Отчет в Telegram](#tg)
++ [Видео примера прохождения теста](#video)
 
 
-
-
-:toolbox:__Технологии и инструменты__
+:toolbox:<a name="instruments"></a>__Технологии и инструменты__
 
 <img width="10%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg"><img width="10%" title="Gradle" src="images/logo/Gradle.svg"><img width="10%" title="Java" src="images/logo/Java.svg"><img width="10%" title="Jenkins" src="images/logo/Jenkins.svg"><img width="10%" title="JUnit5.svg" src="images/logo/JUnit5.svg"><img width="10%" title="Selenide.svg" src="images/logo/Selenide.svg"><img width="10%" title="Selenoid.svg" src="images/logo/Selenoid.svg"><img width="10%" title="GitHub.svg" src="images/logo/GitHub.svg"><img width="10%" title="Allure_Report.svg" src="images/logo/Allure_Report.svg"><img width="10%" title="Telegram.svg" src="images/logo/Telegram.svg">
 
 ---
-__Пример Smoke тестов__
+<a name="smoke"></a>__Пример Smoke тестов__
 
 :white_check_mark: _Позитивные проверки:_
 
@@ -37,7 +35,7 @@ __Пример Smoke тестов__
 - [ ] Подача заявки на консультацию с неполным номером телефона 
 - [ ] Заполнение адреса значением из цифр при подаче обьявления
 ---
-:toolbox: __Сборка в Jenkins__
+:toolbox:<a name="jenkins"></a>__Сборка в Jenkins__
 
 [Проект M2_Project_SmokeTests](https://jenkins.autotests.cloud/job/M2_Project_SmokeTests/)
 
@@ -52,7 +50,7 @@ __Параметризированная сборка в Jenkins__
 <img width="100%" title="ParametrsInJenkins.png" src="images/screenshot/ParametrsInJenkins.png">
 
 ---
-:computer: __Запуск из терминала__
+:computer:<a name="terminal"></a>__Запуск из терминала__
 
 Локальный запуск теста:
 
@@ -69,7 +67,7 @@ vacancy
 ```
 
 ---
-:bar_chart: __Allure отчётность__
+:bar_chart:<a name="report"></a>__Allure отчётность__
 
 <img width="100%" title="AllureReport.png" src="images/screenshot/AllureReport.png">
 
@@ -78,7 +76,7 @@ vacancy
 <img width="100%"  title="Tests.png" src="images/screenshot/Tests.png">
 
 ---
-:incoming_envelope: __Отчёт в Telegram__
+:incoming_envelope:<a name="tg"></a>__Отчёт в Telegram__
 
 <img width="30%"  title="TelegramAllure.png" src="images/screenshot/TelegramAllure.png">
 
@@ -86,7 +84,7 @@ vacancy
 [просмотреть сейчас ](https://jenkins.autotests.cloud/job/M2_Project_SmokeTests/5/allure/)
 
 ---
-:clapper: __Видео примера прохождения теста__
+:clapper:<a name="video"></a>__Видео примера прохождения теста__
 
 Запуск проходит на удаленном веб-драйвере Selenoid
 <img title="Selenoid Video" src="images/video/ExampleAttach.gif">
