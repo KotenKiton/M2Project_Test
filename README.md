@@ -77,11 +77,11 @@ vacancy
 
 ---
 :incoming_envelope:<a name="tg"></a>__Отчёт в Telegram__
-
+<p align="center">
 <img width="30%"  title="TelegramAllure.png" src="images/screenshot/TelegramAllure.png">
+<p align="center">
 
-Кроме красочной инфографики доступна возможность перейти по ссыле для просмотра отчета:
-[просмотреть сейчас ](https://jenkins.autotests.cloud/job/M2_Project_SmokeTests/5/allure/)
+Кроме красочной инфографики доступна возможность перейти по ссылке для просмотра [отчёта](https://jenkins.autotests.cloud/job/M2_Project_SmokeTests/5/allure/)
 
 ---
 :clapper:<a name="video"></a>__Видео примера прохождения теста__
