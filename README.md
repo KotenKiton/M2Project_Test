@@ -1,8 +1,7 @@
-## Проект автоматизации тестирования веб-приложения на ресурсе hh.ru
+## Проект автоматизации тестирования ресурса по поиску недвижимости "Метр квадратный"
 
 ---
-### Вакансия [QA Engineer](https://novgorod.hh.ru/vacancy/67054923?from=vacancy_search_list&hhtmFrom=vacancy_search_list&query=Qa%20java)
-
+### Веб-приложение [Метр квадратный](https://m2.ru/)
 <a id="anchor"></a>
 
 :closed_book: __Содержание__
