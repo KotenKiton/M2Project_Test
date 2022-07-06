@@ -94,7 +94,7 @@ vacancy
 
 :arrow_up: [Вверх страницы](#anchor)
 
-:new_moon_with_face: <a target="_blank" href="https://t.me/BiLLGradLe"></a>
+:new_moon_with_face: <a target="_blank" href="https://t.me/BiLLGradLe">t.me/BiLLGradLe</a>
 
 ---
 
